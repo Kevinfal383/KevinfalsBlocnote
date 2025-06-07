@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         dbHelper = new DatabaseHelper(this);
 
-        // Vérifier si l'utilisateur est inscrit
+
         if (!dbHelper.utilisateurExiste()) {
             Intent intent = new Intent(this, InscriptionActivity.class);
             startActivity(intent);
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerViewNotes);
         FloatingActionButton fabAjouter = findViewById(R.id.fabAjouter);
 
-        // Afficher le nom de l'utilisateur
+
         String nom = dbHelper.getNomUtilisateur();
         textBienvenue.setText("Bienvenue " + nom + " !");
 

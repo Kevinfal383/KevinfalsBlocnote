@@ -32,7 +32,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Création table utilisateur
+
         String CREATE_USER_TABLE = "CREATE TABLE " + TABLE_USER + "("
                 + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_USER_NOM + " TEXT NOT NULL,"
@@ -40,7 +40,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_USER_AGE + " INTEGER NOT NULL" + ")";
         db.execSQL(CREATE_USER_TABLE);
 
-        // Création table notes
         String CREATE_NOTES_TABLE = "CREATE TABLE " + TABLE_NOTES + "("
                 + COLUMN_NOTE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_NOTE_TITRE + " TEXT NOT NULL,"
@@ -56,7 +55,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // Méthodes pour l'utilisateur
     public long ajouterUtilisateur(String nom, String prenom, int age) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -91,7 +89,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return nom;
     }
 
-    // Méthodes pour les notes
     public long ajouterNote(String titre, String contenu) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();

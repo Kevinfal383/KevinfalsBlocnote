@@ -13,7 +13,6 @@ public class Note {
         this.contenu = contenu;
     }
 
-    // Getters et Setters
     public int getId() {
         return id;
     }

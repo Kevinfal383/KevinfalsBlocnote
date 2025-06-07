@@ -1,17 +1,14 @@
 <resources>
     <string name="app_name">BlocNote</string>
 
-    <!-- Messages communs -->
     <string name="erreur_champ_requis">Ce champ est requis</string>
 
-    <!-- Inscription -->
     <string name="titre_inscription">Inscription</string>
     <string name="hint_nom">Nom</string>
     <string name="hint_prenom">Prénom</string>
     <string name="hint_age">Âge</string>
     <string name="btn_inscrire">S\'inscrire</string>
 
-    <!-- Notes -->
     <string name="titre_nouvelle_note">Nouvelle Note</string>
     <string name="titre_modifier_note">Modifier Note</string>
     <string name="hint_titre_note">Titre de la note</string>

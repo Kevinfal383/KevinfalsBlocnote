@@ -36,7 +36,6 @@ public class InscriptionActivity extends AppCompatActivity {
         String prenom = editPrenom.getText().toString().trim();
         String ageStr = editAge.getText().toString().trim();
 
-        // Validation
         if (TextUtils.isEmpty(nom)) {
             editNom.setError("Nom requis");
             editNom.requestFocus();
@@ -69,7 +68,6 @@ public class InscriptionActivity extends AppCompatActivity {
             return;
         }
 
-        // Inscription
         long result = dbHelper.ajouterUtilisateur(nom, prenom, age);
 
         if (result != -1) {
@@ -84,7 +82,6 @@ public class InscriptionActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        // Version avec un simple message utilisateur
         super.onBackPressed();
         Toast.makeText(this, "L'inscription est obligatoire", Toast.LENGTH_SHORT).show();
     }
