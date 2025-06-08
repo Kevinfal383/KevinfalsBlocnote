@@ -19,13 +19,6 @@ Application de prise de notes simple et intuitive.
 
 ## Captures d'écran
 
-| Écran d'inscription | Création de note | Liste des notes  | Modification de note  |
-|---------------------|----------------- |------------------|
-| ![Inscription](./screenshots/inscription.jpeg) | ![Création note](./screenshots/creer-note.jpeg) | ![Liste notes](./screenshots/lister-note.jpeg) | ![Modifacation de note](./screenshots/modifier-note.jpeg) |
-
-<p align="center">
-  <img src="./screenshots/inscription.jpeg" height="300">
-  <img src="./screenshots/creer-note.jpeg" height="300">
-  <img src="./screenshots/lister-note.jpeg" height="300">
-  <img src="./screenshots/modifier-note.jpeg" height="300">
-</p>
+| Écran d'inscription | Création de note | Liste des notes | Modification de note |
+|---------------------|------------------|-----------------|----------------------|
+| <img src="./screenshots/inscription.jpeg" width="200"> | <img src="./screenshots/creer-note.jpeg" width="200"> | <img src="./screenshots/lister-note.jpeg" width="200"> | <img src="./screenshots/modifier-note.jpeg" width="200"> |
